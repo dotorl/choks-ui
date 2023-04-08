@@ -1,11 +1,10 @@
 {
   "name": "choks-ui",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.4",
   "type": "module",
   "description": "choks ui Component",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "./lib/esm/index.js",
+  "main": "./ilb/cjs/index.js",
   "browser": "./browser/specific/main.js",
   "scripts": {
     "dev": "vite",
@@ -13,7 +12,7 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepare": "rm -rf dist && mkdir dist && tsc"
+    "tsc-build": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json"
   },
   "dependencies": {
     "react": "^18.2.0",
