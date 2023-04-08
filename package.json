@@ -1,6 +1,6 @@
 {
   "name": "choks-ui",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "type": "module",
   "description": "choks ui Component",
   "module": "./lib/esm/index.js",
@@ -12,11 +12,19 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "tsc-build": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json"
+    "clean": "rimraf lib",
+    "copy-files": "copyfiles README.md lib",
+    "tsc-build": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && npm run copy-files",
+    "publish:npm": "npm run tsc-build && npm publish"
   },
   "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-avatar": "^1.0.2",
+    "@stitches/react": "^1.2.8",
+    "copyfiles": "^2.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
