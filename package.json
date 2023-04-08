@@ -1,0 +1,62 @@
+{
+  "name": "choks-ui",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "choks ui Component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@storybook/addon-actions": "^7.0.2",
+    "@storybook/addon-essentials": "^7.0.2",
+    "@storybook/addon-interactions": "^7.0.2",
+    "@storybook/addon-links": "^7.0.2",
+    "@storybook/builder-vite": "^7.0.2",
+    "@storybook/react": "^7.0.2",
+    "@storybook/testing-library": "^0.1.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "sass": "^1.61.0",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotorl/choks-ui.git"
+  },
+  "keywords": [
+    "choks-ui"
+  ],
+  "author": "choks0225",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotorl/choks-ui/issues"
+  },
+  "homepage": "https://github.com/dotorl/choks-ui#readme"
+}
