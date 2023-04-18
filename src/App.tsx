@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import './App.css';
 import { Avatar, AvatarGroup, AvatarNestedItem } from './components/Avatar';
 import {
   Accordion,
@@ -88,6 +87,79 @@ function App() {
             PD
           </AvatarPrimitive.Fallback>
         </AvatarPrimitive.Root>
+      </div>
+
+      <p></p>
+
+      <div>
+        {/* <Heading id="accordion" css={{ mb: '$6', scrollMarginTop: '$7' }}>
+          Accordion
+        </Heading> */}
+        <h2 className={'text-violet-500'}>Accordion</h2>
+        <Accordion type="single">
+          <AccordionItem value="accordion-one">
+            <AccordionTrigger>
+              <span>Accoridion One</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <span>
+                The other main improvement is with tables, which we ll probably
+                use a lot. With horizontal overflow on small devices and when
+                zoomed in, tables are a pain to navigate. I added a focus
+                wrapper that will announce the table context to the user when
+                focused, which also allows keyboard users to navigate the
+                overflow more easily.
+              </span>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="accordion-two">
+            <AccordionTrigger>
+              <span className={'text-violet-500'}>Accoridion two</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <span>
+                The other main improvement is with tables, which we ll probably
+                use a lot. With horizontal overflow on small devices and when
+                zoomed in, tables are a pain to navigate. I added a focus
+                wrapper that will announce the table context to the user when
+                focused, which also allows keyboard users to navigate the
+                overflow more easily.
+              </span>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="accordion-three">
+            <AccordionTrigger>
+              <span>Accoridion three</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <span>
+                The other main improvement is with tables, which we ll probably
+                use a lot. With horizontal overflow on small devices and when
+                zoomed in, tables are a pain to navigate. I added a focus
+                wrapper that will announce the table context to the user when
+                focused, which also allows keyboard users to navigate the
+                overflow more easily.
+              </span>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="accordion-four" className={'bg-white mx-6'}>
+            <AccordionTrigger>
+              <span>Accoridion four</span>
+            </AccordionTrigger>
+            <AccordionContent className={'p-0'}>
+              <p></p>
+              <span>
+                The other main improvement is with tables, which we ll probably
+                use a lot. With horizontal overflow on small devices and when
+                zoomed in, tables are a pain to navigate. I added a focus
+                wrapper that will announce the table context to the user when
+                focused, which also allows keyboard users to navigate the
+                overflow more easily.
+              </span>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );
