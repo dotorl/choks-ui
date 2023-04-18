@@ -1,0 +1,13 @@
+//tailwind.scss
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #d38c8c;
+  --secondary-color: #64379f;
+  --tertiary-color: #9854cb;
+  --quaternary-color: #ddacf5;
+  --quinary-color: #75e8e7;
+}

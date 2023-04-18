@@ -2,6 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import { Avatar, AvatarGroup, AvatarNestedItem } from './components/Avatar';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './components/Accordion';
 import * as AvatarPrimitive from '@radix-ui/react-avatar';
 
 function App() {
