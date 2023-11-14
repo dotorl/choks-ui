@@ -8,6 +8,11 @@ import {
   AccordionTrigger,
 } from './components/Accordion';
 import * as AvatarPrimitive from '@radix-ui/react-avatar';
+import * as AspectRatio from '@radix-ui/react-aspect-ratio';
+import { Button } from './components';
+import { AppBar } from './components/Appbar';
+import SampleTypoGraphy from './sample/typography';
+import SampleColors from './sample/Colors';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +20,44 @@ function App() {
   return (
     <div className="App">
       <h1>HI</h1>
+
+      <SampleTypoGraphy />
+
+      <SampleColors />
+
+      <AppBar color="accent">
+        <Button>accent</Button>
+      </AppBar>
+      <AppBar size="5" color="plain">
+        <Button>plain</Button>
+      </AppBar>
+      <AppBar size="10" color="loContrast" border sticky glass>
+        <Button>loContrast</Button>
+      </AppBar>
+
+      <h2> 16 / 9 </h2>
+      <div style={{ width: '300px' }}>
+        <AspectRatio.Root ratio={16 / 9}>
+          <img
+            className="Image"
+            src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+            alt="Landscape photograph by Tobias Tullius"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </AspectRatio.Root>
+      </div>
+
+      <h2> 9 / 16 </h2>
+      <div style={{ width: '300px' }}>
+        <AspectRatio.Root ratio={9 / 16}>
+          <img
+            className="Image"
+            src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+            alt="Landscape photograph by Tobias Tullius"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </AspectRatio.Root>
+      </div>
 
       <Avatar
         size="4"
