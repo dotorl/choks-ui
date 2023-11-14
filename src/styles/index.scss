@@ -1,5 +1,9 @@
 @import 'tailwind.scss';
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +11,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+
+  //   /* iOS 11.0 버전 */
+  // constant(safe-area-inset-top)
+  // constant(safe-area-inset-right)
+  // constant(safe-area-inset-bottom)
+  // constant(safe-area-inset-left)
+
+  // /* iOS 11.2 이상 */
+  // env(safe-area-inset-top)
+  // env(safe-area-inset-right)
+  // env(safe-area-inset-bottom)
+  // env(safe-area-inset-left)
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 code {
